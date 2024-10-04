@@ -1,0 +1,208 @@
+:root{
+    --center: auto;
+    --width: 100%;
+    --radius: 10px;
+    --main-color: #dbe0e2;
+}
+*{
+    font-family: 'Exo', sans-serif;
+}
+.form{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    margin: var(--center);
+    background-color: var(--main-color);
+}
+.container{
+    width: 30%;
+    min-width: 360px;
+    height: 600px;
+    margin: var(--center); 
+    border-radius: var(--radius);
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 15px #aca9b0, -10px -10px 15px #eee ;
+}
+/* -------- Child-Container # 1 -------- */
+.container__title{
+    width: var(--width);
+    height: 21%;
+    display: flex; /*Este display flex fue utilizado para que la propiedad margin centrara el elemento hijo "h1" */
+}
+.container__title > h1{
+    margin: var(--center);
+    /* font-family: 'Sono', sans-serif; */
+}
+/* -------- Child-Container # 2 -------- */
+.container__alternative-account{
+    width: var(--width);
+    height: 10%;
+}
+.container__brand-icons{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: auto;
+    list-style: none;
+}
+.container__brand-icon{
+    width: 25%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+.fab{
+    margin-right: 3px;
+}
+.container__brand-icon > button{
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+/* -------- Child-Container # 3 -------- */
+.container__user{
+    width: var(--width);
+    height: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__section{
+    display: none;
+}
+.container__section--active{
+    width: 90%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.container__text{
+    padding: 0 55px;
+}
+.container__icon{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: inset 6px 6px 5px #aca9b0, inset -6px -6px 5px #eee ;
+    border-radius: var(--radius);
+    background-color: var(--main-color);
+    border: none;
+}
+.container__icon > input{
+    width: 205px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+/* -------- Child-Container # 4 -------- */
+.container__password{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.container__password > a{
+    text-decoration: none;
+    color: #000;
+}
+/* -------- Child-Container # 5 -------- */
+.container__terms-conditions{
+    width: var(--width);
+    height: 8%;
+    display: flex;
+}
+.container__checkbox{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.container__check{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    box-shadow: 4px 4px 5px #aca9b0, -4px -4px 5px #eee;
+}
+.container__check > input{
+    cursor: pointer;
+    color: #15c9e0;
+}
+/* -------- Child-Container # 6 -------- */
+.container__submit{
+    width: var(--width);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container__submit > p{
+    font-size: 12px;
+}
+/* -------- Multi-class -------- */
+
+.container__button{
+    width: 140px;
+    height: 35px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+.neumorphism{
+    box-shadow: 6px 6px 5px #aca9b0, -6px -6px 5px #eee;
+    background-color: var(--main-color);
+}
+.container__section > .container__text, .container__checkbox > p, .container__password > a{
+    font-size: 13px;
+}
+.error__input{
+    display: none;
+    width: 285px;
+    font-size: 11px;
+    color: red;
+    text-align: center;
+}
+/* -------- Called from Javascript -------- */
+
+.icon__light{
+    color: #9eeef8;
+    text-shadow: 0 0 5px #15c9e0, 0 0 25px #15c9e0, 0 0 50px #15c9e0, 0 0 100px #15c9e0;
+}
+.delay__button{
+    color: #9eeef8;
+    text-shadow: 0 0 5px #15c9e0, 0 0 25px #15c9e0, 0 0 50px #15c9e0, 0 0 100px #15c9e0;
+    box-shadow: inset 6px 6px 5px #aca9b0, inset -6px -6px 5px #eee ;
+}
+
+.delay__button-error{
+    /* color: #EB2513; */
+    color: #EC6735;
+    text-shadow: 0 0 5px #E63D0A, 0 0 25px #E63D0A, 0 0 50px #E63D0A, 0 0 100px #E63D0A;
+    box-shadow: inset 6px 6px 5px #aca9b0, inset -6px -6px 5px #eee ;
+}

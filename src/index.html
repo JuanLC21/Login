@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <form action="" class="form">
+        <div class="container">
+            <!---------- Child-Container # 1 ---------->
+            <div class="container__title">
+                <h1>Login Form</h1>
+            </div>
+            <!---------- Child-Container # 2 ---------->
+            <div class="container__alternative-account">
+                <ul class="container__brand-icons">
+                    <li class="container__brand-icon" id = "1"> 
+                        <button type="button" class="neumorphism container__button"><i class="fab fa-facebook-f"></i>acebook</button>
+                    </li>
+                    <li class="container__brand-icon" id = "2">
+                        <button type="button" class="neumorphism container__button"><i class="fab fa-google"></i>oogle</button>
+                    </li>
+                    <li class="container__brand-icon" id = "3">
+                        <button type="button" class="neumorphism container__button"><i class="fab fa-twitter"></i>Twitter</button>
+                    </li>
+                </ul>
+            </div>
+            <!---------- Child-Container # 3 ---------->
+            <div class="container__user">
+                <button type="button" class="neumorphism container__button">Change Option</button>
+                <section class="container__section container__section--active"  id = "1">
+                    <p class="container__text">Do you want to get in with email?. Click "change option" above.</p>
+                    <div class="container__icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="username" id = "1">
+                    </div>
+                    <p class="error__input">Username must be between 5 and 15 characters ("letter", "number" and/or "underscore") </p>
+                </section>
+                <section class="container__section" id = "0">
+                    <p class="container__text">Do you want to get in with username?. Click "change option" above.</p>
+                    <div class="container__icon" >
+                        <i class="fas fa-at"></i>
+                        <input type="email" placeholder="email" id = "2">
+                    </div>
+                    <p class="error__input">Email must have a format similar to this: email@loginform.edu.co or email@loginform.com</p>
+                </section>       
+            </div>
+            <!---------- Child-Container # 4 ---------->
+            <div class="container__password">
+                <div class="container__icon">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="password" id = "3">
+                </div> 
+                <p class="error__input">Password must be between 7 and 20 characters ("letter", "number" and/or these 5 symbol: * _ # $ -)</p>    
+                <a href="https://fonts.google.com/" target="_blank">Forgot your password?</a>
+            </div>
+            <!---------- Child-Container # 5 ---------->
+            <div class="container__terms-conditions">
+                <div class="container__checkbox">
+                    <div class="container__check">
+                        <input type="checkbox" id ="check">
+                    </div>
+                    <p>I agree to the terms and conditions</p>
+                </div>
+            </div>
+            <!---------- Child-Container # 6 ---------->
+            <div class="container__submit">
+                <button type="submit" class="neumorphism container__button">Login</button>
+                <p class="error__input">Form incomplete or incorrect</p>
+                <p>Copyright Corporation 2023</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
